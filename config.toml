@@ -1,0 +1,18 @@
+
+pin-threads=[12,13]
+blas-threads=1
+rest-api-port=8004
+input-channel="aeron:ipc"
+input-stream=1011
+
+output-channel-unfringed="aeron:ipc"
+output-stream-unfringed=5001
+
+output-channel-fringed="aeron:ipc"
+output-stream-fringed=5002
+
+output-channel-diff="aeron:ipc"
+output-stream-diff=5003
+
+[state]
+    flux-averaging-filt-gain = 0.0001
